@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-API Restful for Airbnb clone
+Restful API for Airbnb clone
 """
 from flask import Flask, Blueprint
 from flask_cors import CORS
@@ -16,7 +16,7 @@ app.register_blueprint(app_views)
 
 
 @app.teardown_appcontext
-def teardowndb():
+def teardowndb(self):
     """
     method that calls storage.close()
     """
