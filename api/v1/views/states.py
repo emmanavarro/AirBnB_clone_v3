@@ -52,9 +52,9 @@ def post_state():
     """
     json_request = request.get_json()
     if not json_request:
-        return json_request({'error': 'Not a JSON'}), 400
+        return jsonify({'error': 'Not a JSON'}), 400
     elif 'name' not in json_request:
-        return json_request({'error': 'Missing name'}), 400
+        return jsonify({'error': 'Missing name'}), 400
     else:
         new_state = State(**json_request)
         storage.new(new_state)
@@ -69,7 +69,7 @@ def put_state(state_id):
     """
     json_request = request.get_json()
     if not json_request:
-        return json_request({'error': 'Not a JSON'}), 400
+        return jsonify({'error': 'Not a JSON'}), 400
     states_id = storage.get("State", state_id)
     if states_id:
         for key, value in json_request.items():
