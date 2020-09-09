@@ -57,6 +57,9 @@ def post_cities(state_id):
     """
     Creates a City object
     """
+    states_id = storage.get("State", state_id)
+    if states_id is None:
+        abort(404)
     json_request = request.get_json()
     if not json_request:
         return jsonify({'error': 'Not a JSON'}), 400
