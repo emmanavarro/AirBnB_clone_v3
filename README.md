@@ -14,6 +14,7 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [File Descriptions](#file-descriptions)
 * [Usage](#usage)
 * [Examples of use](#examples-of-use)
+* [RESTful API](#restful-api)
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
@@ -150,13 +151,42 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+## RESTful API
+
+* Expose all your objects stored via a JSON web interface.
+* Manipulate your objects via a RESTful API.
+
+### Diagram AirBnB RESTful API
+![](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/images/RESTful_API.png)
+
+### Files in the [api](/api) folder:
+
+| File | File Hierarchy | Description |
+| :---: | :---: | :---: |
+| `App` | [app.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/app.py) | First endpoint to return the status of the API |
+| `Index` | [index.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/index.py) | Endpoint that retrieves the number of each objects by type |
+| `States` | [states.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/states.py) | `State` objects that handles all default RestFul API actions |
+| `Cities` | [cities.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/cities.py) | `City` objects that handles all default RestFul API actions |
+| `Amenities` | [amenities.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/amenities.py) | `Amenity` objects that handles all default RestFul API actions |
+| `Users` | [users.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/users.py) | `User` objects that handles all default RestFul API actions |
+| `Places` | [places.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/places.py) | `Place` objects that handles all default RestFul API actions |
+| `Reviews` | [places_reviews.py](https://github.com/emmanavarro/AirBnB_clone_v3/blob/master/api/v1/views/places_reviews.py) | `Review` objects that handles all default RestFul API actions |
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
+
+| Authors | GitHub | Twitter | Linkedin |
+| :---: | :---: | :---: | :---: |
+| Maria Fernanda Crespo | [mfcrespo](https://github.com/mfcrespo) | [@mafe_crespo](https://twitter.com/mafe_crespo) | [mariafernandacrespo](https://www.linkedin.com/in/mariafernandacrespo) |
+| Emma Navarro | [emmanavarro](https://github.com/emmanavarro) | [@Ayy_Emma](https://twitter.com/Ayy_Emma) | [emmanavarromillan](https://www.linkedin.com/in/emmanavarromillan/) |
+
+
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
 Second part of Airbnb: Joann Vuong
+
 ## License
 Public Domain. No copy write protection. 
